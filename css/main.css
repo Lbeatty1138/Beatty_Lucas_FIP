@@ -60,6 +60,48 @@ body
 	background-color: #333333;
 }
 
+/* header */
+
+.headerLogo
+{
+	width: 30%;
+}
+
+.headerLogo img
+{
+	margin-top: 30px;
+	margin-left: 15px;
+}
+
+#mainHeader
+{
+	background: url(../images/headerImg_sm.jpg) no-repeat;
+	background-size: contain;
+}
+
+/* footer */
+
+#mainFooter
+{
+	background-color: #616161;
+	height: 80px;
+	border-top: 4px solid #4f4f4f;
+	margin-top: 20px;
+}
+
+#footerNav
+{
+	display: none;
+}
+
+
+#mobileNav
+{
+	height: 50px;
+	text-align: center;
+	margin-top: 33px;
+}
+
 /* Home page */
 
 /* About page */
@@ -73,7 +115,7 @@ body
 
 #aboutUs h2
 {
-	font-size: 24px;
+	font-size: 29px;
 	margin-bottom: 10px;
 
 }
@@ -120,7 +162,7 @@ body
 
 #excutivesArea
 {
-
+	font-size: 29px;
 }
 
 .excutiveInfo
@@ -133,7 +175,7 @@ body
 
 .headShot
 {
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-left: 27px;
 }
 
@@ -144,7 +186,18 @@ body
 
 .headShot h4
 {
+	font-family: didact-gothic;
 	font-size: 12px;
+}
+
+#committeeArea
+{
+	margin-top: 20px; 
+}
+
+#committeeArea h2
+{
+	font-size: 29px;
 }
 
 #committeeHeader
@@ -154,15 +207,30 @@ body
 	flex-wrap: wrap;
 }
 
+#committeeHeaders
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.committeeInfo
+{
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
 .committeeInfo h3
 {
-	font-size: 14px;
+	font-size: 18px;
 }
 
 .committeeInfo h4
 {
+	font-family: didact-gothic;
 	margin-top: 5px;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 
@@ -197,8 +265,16 @@ body
 }
 
 
+/*@media screen and (min-width: 430px){
+
+	.headerLogo 
+	{
+		width: 120px;
+	}
 
 
+}
+*/
 
 
 
