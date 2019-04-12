@@ -1,3 +1,218 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* fonts */
+
+@font-face {
+	font-family: 'glacial_indifferencebold';
+	src: url('../fonts/glacialindifference-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'glacial_indifferenceregular';
+	src: url('../fonts/glacialindifference-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'glacial_indifferenceitalic';
+	src: url('../fonts/glacialindifference-italic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'didact-gothic';
+	src: url('../fonts/didactgothic-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* General CSS */
+
+.hidden
+{
+	display: none;
+}
+
+p
+{
+	font-family: 'didact-gothic', helvetica, Arial, sans-serif;
+	color: white;
+}
+
+li
+{
+	color: white;
+}
+
+h1, h2, h3, h4
+{
+	font-family: 'glacial_indifferencebold', helvetica, Arial, sans-serif;
+	color: white;
+}
+
+body
+{
+	background-color: #333333;
+}
+
+/* Home page */
+
+/* About page */
+
+#aboutUs
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%
+}
+
+#aboutUs h2
+{
+	font-size: 24px;
+	margin-bottom: 10px;
+
+}
+
+#aboutUs p
+{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+#aboutUs li
+{
+	font-size: 14px;
+	margin-bottom: 10px;
+
+}
+
+.aboutImg
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.moreAbout img
+{
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.moreAbout p
+{
+	margin: 5px auto;
+	max-width: 70%;
+
+}
+
+.aboutImg
+{
+	margin-bottom: 10px;
+}
+
+#excutivesArea
+{
+
+}
+
+.excutiveInfo
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+.headShot
+{
+	margin-top: 10px;
+	margin-left: 27px;
+}
+
+.headShot h3
+{
+	font-size: 14px;
+}
+
+.headShot h4
+{
+	font-size: 12px;
+}
+
+#committeeHeader
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.committeeInfo h3
+{
+	font-size: 14px;
+}
+
+.committeeInfo h4
+{
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+
+
+/* Projects page */
+
+#projectsInfo
+{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.polaroidEffect
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	border: solid;
+	border-width: 10px;
+	border-bottom-width: 25px;
+	border-color: white;
+	
+}
+
+#folderInfo
+{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
