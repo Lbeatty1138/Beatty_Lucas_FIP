@@ -33,6 +33,11 @@
 
 /* General CSS */
 
+@keyframes appear {
+	0% { transform: scaleX(5); }
+	100% { transform: scaleX(1); }
+}
+
 .hidden
 {
 	display: none;
@@ -42,6 +47,7 @@ p
 {
 	font-family: 'didact-gothic', helvetica, Arial, sans-serif;
 	color: white;
+	line-height: 25px;
 }
 
 li
@@ -145,6 +151,7 @@ li.slideToggle {
 
 @media screen and (min-width: 910px){
 
+
 /* fix later please */
 
 	#button
@@ -160,7 +167,7 @@ li.slideToggle {
 	}
 
 
-
+}
 /* footer */
 
 #mainFooter
@@ -326,38 +333,6 @@ li.slideToggle {
 	font-size: 14px;
 }
 
-
-
-/* Projects page */
-
-#projectsInfo
-{
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.polaroidEffect
-{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
-	border: solid;
-	border-width: 10px;
-	border-bottom-width: 25px;
-	border-color: white;
-	
-}
-
-#folderInfo
-{
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
 @media screen and (min-width: 500px){
 
 	#mainHeader
@@ -478,6 +453,103 @@ li.slideToggle {
 	}
 
 	}
+
+
+/* Projects page */
+
+
+#projectsInfo
+{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#projectsInfo h2
+{
+	font-size: 29px;
+	margin-bottom: 10px;
+}
+
+#projectsInfo p
+{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+
+.polaroidEffect
+{
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	border: solid;
+	border-width: 10px;
+	border-bottom-width: 25px;
+	border-color: white;
+	width: 70%;
+	
+}
+
+
+#folderInfo
+{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 760px){
+	#mainFolder
+	{
+		display: flex;
+		flex-direction: row;
+		padding-top: 30px;
+		background-color: #d5ac80;
+	}
+
+	#polaroidImg
+	{
+		margin-left: 10px;
+		width: 80%;
+		max-width: 435px;
+	}
+
+	#folderInfo h3
+	{
+		text-align: center;
+		color: black;
+		font-size: 30px;
+		margin-bottom: 26px;
+	}
+
+	#folderInfo p
+	{
+		background-color: white;
+		padding: 10px;
+		color: black;
+		margin-left: 5px;
+		margin-right: 20px;
+	}
+
+	}
+
+@media screen and (min-width: 1090px){
+
+	#mainFolder
+	{
+		margin: 0 auto;
+		width: 87%;
+	}
+
+}
+
+
+
 
 
 /*@media screen and (min-width: 430px){
