@@ -27,3 +27,4 @@ console.log("fired!");
 
 		window.addEventListener("resize", closeMenu);
 
+// words and stuff and things
