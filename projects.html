@@ -7,11 +7,31 @@
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body class="navBck">
 	<div id="siteCon">
-	<header>
-		<h2 class="hidden">Main Nav</h2>
-	</header>
+		<h1 class="hidden">Thames River Anglers Association</h1>
+		<div></div>
+		<header id="mainHeader">	
+			<nav class="mainNav">
+				<h2 class="hidden">Main Navigation</h2>
+				<div class="headerLogo">
+					<img src="images/traa_logo_ellipse.svg" alt="TRAA Logo"> <!-- height="80" width="80" -->
+				</div>
+				<div id="hamEnd">
+				<button id="button"></button>
+				<div class="burgerCon">
+					<ul id="burgerMenu">
+		              <li><a href="index.html">Home</a></li>
+		              <li><a href="about.html">About</a></li>
+		              <li><a href="projects.html">Projects</a></li>
+		              <li><a href="#">Contact</a></li>
+		              <li><a href="#">Newsletters</a></li>
+		              <li><a href="#">Links</a></li>
+            		</ul>
+				</div>
+			</div>
+			</nav>
+		</header>
 
 	<section id="projectsInfo">
 		<h2>Hands-on Environmentalism is what we do!</h2>
@@ -60,5 +80,7 @@
 	</section>
 	
 	</div>
+
+	<script src="js/main.js"></script>
 </body>
 </html>

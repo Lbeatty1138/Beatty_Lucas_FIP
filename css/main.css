@@ -71,13 +71,95 @@ body
 {
 	margin-top: 30px;
 	margin-left: 15px;
+	margin-bottom: 20px;
 }
 
 #mainHeader
 {
 	background: url(../images/headerImg_sm.jpg) no-repeat;
-	background-size: contain;
+	background-size: cover;
 }
+
+#button
+{
+	width: 100px;
+	height: 30px;
+}
+
+#hamEnd {
+	display: flex;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+@keyframes toggleDown {
+	0% { margin-top: -1000px; }
+	40% { margin-top: 100px; }
+	80% { margin-top: 0; }
+	100% { margin-top: 0; }
+}
+
+#hamEnd.slideToggle {
+	justify-content: center;
+}
+
+li.slideToggle {
+	animation: toggleDown 0.8s ease;
+}
+
+.burgerCon
+{
+	display: none;
+}
+
+#button
+{
+	background-color: #1d8a99;
+}
+
+.burgerCon.slideToggle
+{
+	display: flex;
+	justify-content: flex-end;
+	background-color: #1d8a99;
+}
+
+#burgerMenu li a
+{
+	color: white;
+	border-bottom: 1.5px solid #ffffff;
+	font-size: 20px;
+	font-family: 'glacial_indifferencebold', helvetica, Arial, sans-serif;
+}
+
+@media screen and (min-width: 520px){
+
+	.headerLogo
+	{
+		width: 141px;
+	}
+
+	}
+
+@media screen and (min-width: 910px){
+
+/* fix later please */
+
+	#button
+	{
+		display: none
+	}
+
+	.burgerCon
+	{
+		display: block;
+		background-color: #1d8a99;
+		border: none;	
+	}
+
+
 
 /* footer */
 
@@ -102,6 +184,12 @@ body
 	margin-top: 33px;
 }
 
+#mobileNav ul li
+{
+	font-family: 'glacial_indifferencebold', Helvetica, Arial, sans-serif; 
+	font-size: 15px;
+	color: white;
+}
 /* Home page */
 
 /* About page */
@@ -128,6 +216,7 @@ body
 
 #aboutUs li
 {
+	font-family: 'didact-gothic';
 	font-size: 14px;
 	margin-bottom: 10px;
 
@@ -160,8 +249,10 @@ body
 	margin-bottom: 10px;
 }
 
-#excutivesArea
+#excutivesArea h2
 {
+	margin: auto;
+	width: 80%;
 	font-size: 29px;
 }
 
@@ -197,6 +288,8 @@ body
 
 #committeeArea h2
 {
+	margin: auto;
+	width: 80%;
 	font-size: 29px;
 }
 
@@ -263,6 +356,128 @@ body
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
+@media screen and (min-width: 500px){
+
+	#mainHeader
+	{
+	background: url(../images/headerImg_lg.jpg) no-repeat;
+	background-size: cover;
+	}
+
+	#aboutUs
+	{
+		margin-bottom: 20px;
+	}
+
+	.moreAbout p
+	{
+		margin: 20px auto;
+	}
+
+}
+
+@media screen and (min-width: 780px){
+
+	#aboutUs
+	{
+		margin-bottom: 20px;
+	}
+
+	#aboutUs h2
+	{
+		font-size: 30px;
+	}
+
+	#aboutUs p
+	{
+		font-size: 24px;
+	}
+
+	#aboutUs ul li 
+	{
+		font-size: 18px;
+	}
+
+	.moreAbout
+	{
+		display: flex;
+		flex-direction: row;
+		font-size: 
+	}
+
+	.moreAbout p
+	{
+		margin-left: 10px;
+		font-size: 18px;
+	}
+
+	.moreAbout img
+	{
+		max-width: 100%;
+	}
+
+	#excutivesArea
+	{
+		margin-top: 20px;
+	}
+
+	#excutivesArea h2
+	{
+		font-size: 30px;
+	}
+
+	.headShot h3
+	{
+		font-size: 26px;
+	}
+	
+	.headShot h4
+	{
+		font-size: 20px;
+	}
+
+	#committeeArea
+	{
+		margin-bottom: 20px;
+	}
+
+	.committeeInfo h3
+	{
+		font-size: 26px
+	}
+
+	.committeeInfo h4
+	{
+		font-size: 20
+	}
+}
+
+@media screen and (min-width: 1080px){
+
+	#aboutUs
+	{
+		margin-bottom: 40px;
+	}
+	
+	.moreAbout
+	{
+		max-width: 90%;
+		margin: auto;
+	}
+	
+	#excutivesArea
+	{
+		margin-top: 40px;
+	}
+
+	#committeeArea
+	{
+		margin-top: 40px;
+	}
+
+	}
 
 
 /*@media screen and (min-width: 430px){
