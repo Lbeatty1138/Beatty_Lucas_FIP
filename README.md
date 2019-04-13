@@ -16,7 +16,7 @@ Photoshop and Illustrator - to create the design and assets for the webpages
 
 ## Authors
 
-Lucas Beatty - Designer/Developer - Created the wireframes for the site and the initially designed elements for the site, also went back over the HTML and CSS and made minor fixes also coded the HTML and CSS
+Lucas Beatty - Designer/Developer - Created the wireframes for the site and the initially designed elements for the site. Along with writting the CSS HTML and JS for the site
 
 ## Version
 
