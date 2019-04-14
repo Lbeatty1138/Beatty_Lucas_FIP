@@ -459,16 +459,10 @@ li.slideToggle {
 }
 /* About page */
 
-#TRAAvideo
-{
-	margin-top: 20px;
-	margin-left: 15px;
-}
-
-
 
 .videoSize
 {
+	margin-top: 20px;
 	width: 80%;
 }
 
@@ -623,6 +617,16 @@ li.slideToggle {
 
 }
 
+@media screen and (min-width: 750px){
+
+	.videoSize
+	{
+		height: 300px;
+
+	}
+
+}
+
 @media screen and (min-width: 780px){
 
 	#aboutUs
@@ -700,6 +704,11 @@ li.slideToggle {
 }
 
 @media screen and (min-width: 1080px){
+
+	.videoSize
+	{
+		height: 500px;
+	}
 
 	#aboutUs
 	{
