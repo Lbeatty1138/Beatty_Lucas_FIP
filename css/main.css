@@ -33,6 +33,11 @@
 
 /* General CSS */
 
+@keyframes appear {
+	0% { transform: scaleX(5); }
+	100% { transform: scaleX(1); }
+}
+
 .hidden
 {
 	display: none;
@@ -42,6 +47,8 @@ p
 {
 	font-family: 'didact-gothic', helvetica, Arial, sans-serif;
 	color: white;
+	line-height: 25px;
+	font-size: 18px;
 }
 
 li
@@ -53,6 +60,11 @@ h1, h2, h3, h4
 {
 	font-family: 'glacial_indifferencebold', helvetica, Arial, sans-serif;
 	color: white;
+}
+
+h2
+{
+	font-size: 29px;
 }
 
 body
@@ -145,6 +157,7 @@ li.slideToggle {
 
 @media screen and (min-width: 910px){
 
+
 /* fix later please */
 
 	#button
@@ -160,7 +173,7 @@ li.slideToggle {
 	}
 
 
-
+}
 /* footer */
 
 #mainFooter
@@ -192,7 +205,272 @@ li.slideToggle {
 }
 /* Home page */
 
+#welcomeHome
+{
+	width: 70%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#joinMem
+{
+	width: 70%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#joinMem p
+{
+	margin-top: 15px;
+}
+
+#fundInfo
+{
+	width: 70%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#fundInfo p
+{
+	margin-top: 15px;
+}
+
+#fundInfo ul
+{
+	margin-top: 5px;
+}
+
+#fundInfo ul li
+{
+	font-family: 'didact-gothic';
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.joinButton 
+{
+	width: 185px;
+	font-family: 'glacial_indifferencebold';
+	font-size: 29px;
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #1d8a99;
+}
+
+.joinButton a
+{
+	color: white;
+}
+
+.joinButton:hover
+{
+	box-shadow: 1px 1px white, 2px 2px white, 3px 3px white;
+}
+
+.fundButton 
+{
+	width: 185px;
+	font-family: 'glacial_indifferencebold';
+	font-size: 29px;
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ff6600;
+}
+
+.fundButton a
+{
+	color: white;
+}
+
+.fundButton:hover
+{
+	box-shadow: 1px 1px white, 2px 2px white, 3px 3px white;
+}
+
+#supporterArea
+{
+	margin-top: 30px;
+	padding-top: 20px;
+	background-color: white;
+}
+
+#supporterArea h2
+{
+	color: black;
+	margin-left: 15px;
+}
+
+#supporterArea p 
+{
+	color: black;
+}
+
+.supporter
+{
+	width: 70%;
+}
+
+.supporterImg
+{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grp1
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.grp2
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.grp3
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 500px){
+
+	.supporter
+	{
+		max-width: 373px;
+	}
+
+}
+
+@media screen and (min-width: 530px){
+	#welcomeHome
+	{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	#welcomeHome h2
+	{font-size: 24px;
+
+	}
+
+	#welcomeHome p
+	{
+		line-height: 16px;
+		font-size: 14px;
+	}
+
+	.welcomeImg
+	{
+		width: 40%;
+	}
+
+	.welcomeText
+	{
+		width: 40%;
+		margin-left: 10px;
+	}
+	
+	}
+
+@media screen and (min-width: 800px){
+	#welcomeHome h2
+	{font-size: 29px;
+
+	}
+
+	#welcomeHome p
+	{
+		line-height: 20px;
+		font-size: 18px;
+	}
+
+	.welcomeImg
+	{
+		width: 380px;
+	}
+
+	/*380*/
+
+	#helpingOut
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#joinMem
+	{
+		width: 40%;
+	}
+
+	#joinMem h2
+	{
+		text-align: center;
+	}
+
+	#fundInfo
+	{
+		width: 40%;
+	}
+
+	#fundInfo h2
+	{
+		text-align: center;
+	}
+
+	.supporter
+	{
+		margin-left: 20px
+	}
+
+}
+
+@media screen and (min-width: 1200px){
+
+	.joinButton
+	{
+		margin-top: 40px;
+	}
+
+}
 /* About page */
+
+#TRAAvideo
+{
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+
+
+.videoSize
+{
+	width: 80%;
+}
 
 #aboutUs
 {
@@ -241,7 +519,6 @@ li.slideToggle {
 {
 	margin: 5px auto;
 	max-width: 70%;
-
 }
 
 .aboutImg
@@ -277,7 +554,7 @@ li.slideToggle {
 
 .headShot h4
 {
-	font-family: didact-gothic;
+	font-family: 'didact-gothic', helvetica, Arial, sans-serif;
 	font-size: 12px;
 }
 
@@ -325,38 +602,6 @@ li.slideToggle {
 	margin-top: 5px;
 	font-size: 14px;
 }
-
-
-
-/* Projects page */
-
-#projectsInfo
-{
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.polaroidEffect
-{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
-	border: solid;
-	border-width: 10px;
-	border-bottom-width: 25px;
-	border-color: white;
-	
-}
-
-#folderInfo
-{
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 
 @media screen and (min-width: 500px){
 
@@ -463,7 +708,7 @@ li.slideToggle {
 	
 	.moreAbout
 	{
-		max-width: 90%;
+		max-width: 70%;
 		margin: auto;
 	}
 	
@@ -480,18 +725,205 @@ li.slideToggle {
 	}
 
 
-/*@media screen and (min-width: 430px){
+/* Projects page */
 
-	.headerLogo 
+
+#projectsInfo
+{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#projectSwitch
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.selector
+{
+	display: block;
+	margin-left: 10px;
+}
+
+#projectSwitch h2
+{
+	font-size: 20px;
+}
+
+#projectsInfo h2
+{
+	font-size: 29px;
+	margin-bottom: 10px;
+}
+
+#projectsInfo p
+{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+
+.polaroidEffect
+{
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	border: solid;
+	border-width: 10px;
+	border-bottom-width: 25px;
+	border-color: white;
+	width: 70%;
+	
+}
+
+
+#folderInfo
+{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 760px){
+	#projectSwitch
 	{
-		width: 120px;
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		margin-left: 20px;
+		margin-top: 30px;
+		margin-bottom: 0px;
+		font-size: 20px;
+		font-family: 'glacial_indifferencebold';
 	}
 
+	.selector
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.projectSelect
+	{
+		display: none;
+	}
+
+	.projectHolder
+	{
+		background-color: #d5ac80;
+		margin-right: 10px;
+		border-radius: 20px 20px 0px 0px;
+		color: black;
+	}
+
+	.projectHolder h3
+	{
+		color: black;
+		padding: 10px;
+	}
+
+	#mainFolder
+	{
+		display: flex;
+		flex-direction: row;
+		padding-top: 30px;
+		background-color: #d5ac80;
+	}
+
+	#polaroidImg
+	{
+		margin-left: 10px;
+		width: 80%;
+		max-width: 435px;
+	}
+
+	#folderInfo h3
+	{
+		text-align: center;
+		color: black;
+		font-size: 30px;
+		margin-bottom: 26px;
+	}
+
+	#folderInfo p
+	{
+		background-color: white;
+		padding: 10px;
+		color: black;
+		margin-left: 5px;
+		margin-right: 20px;
+	}
+
+	}
+
+@media screen and (min-width: 1090px){
+
+	#mainFolder
+	{
+		margin: 0 auto;
+		width: 87%;
+	}
+
+	#projectSwitch
+	{
+		margin-left: 120px;
+	}
 
 }
-*/
 
 
+/* LightBox */
+@keyframes appear {
+	0% { transform: scaleX(5); }
+	100% { transform: scaleX(1); }
+}
+
+
+.lightbox 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.showLightBox {
+  display: flex;
+  animation: opacityChange 0.15s ease-in;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@keyframes opacityChange {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#lightImage {
+	margin: 0 auto;
+}
+
+.lightbox a {
+  display: flex;
+}
+
+#lightImageTest
+{
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
 
 
 
