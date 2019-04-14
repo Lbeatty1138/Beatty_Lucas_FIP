@@ -25,7 +25,6 @@ Lucas Beatty - Designer/Developer - Created the wireframes for the site and the 
 ***1.1 This build is more fleshed out only containing 3 pages*** at this stage the pages have full redesigns from mobile up and being a reactive site make up. Also has working javascrip to have lightbox and working hamburger menus and a small video explaining the TRAA.
 
 ## Acknowledgments
-currently the lightbox and video are not in the site as of yet but will be added befor sunday 11:59
 
 
 
