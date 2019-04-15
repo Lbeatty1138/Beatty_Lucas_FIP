@@ -157,12 +157,19 @@ li.slideToggle {
 
 @media screen and (min-width: 910px){
 
-
-/* fix later please */
-
 	#button
 	{
 		display: none
+	}
+
+	#hamEnd
+	{
+		position: static;
+	}
+
+	.mainNav
+	{
+		display: block;
 	}
 
 	.burgerCon
@@ -170,6 +177,25 @@ li.slideToggle {
 		display: block;
 		background-color: #1d8a99;
 		border: none;	
+	}
+
+	#burgerMenu
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 10px;
+
+	}
+
+	#burgerMenu li
+	{
+		margin-right: 30px;
+	}
+
+	#burgerMenu li a
+	{
+		border: none;
 	}
 
 
@@ -203,6 +229,69 @@ li.slideToggle {
 	font-size: 15px;
 	color: white;
 }
+
+@media screen and (min-width: 910px){
+
+	#mobileNav
+	{
+		display: none;
+	}
+
+	#footer
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#footerNav
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#footerNav ul
+	{
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		margin-left: 120px;
+		margin-top: 10px;
+		font-family: 'glacial_indifferencebold';
+	}
+
+	#footerNav ul li a
+	{
+		color: white;
+	}
+
+	#footerNav ul li
+	{
+		margin-right: 30px;
+	}
+
+	#footerCopy
+	{
+		display: block;
+	}
+
+	#footerCopy p
+	{
+		text-align: end;
+		font-size: 12px;
+	}
+
+	.socialIcon
+	{
+		display: inline-block;
+		width: 43px;
+		margin-top: 10px;
+		margin-left: 5px;
+		margin-right: 9px;
+
+	}
+}
+
+
 /* Home page */
 
 #welcomeHome
